@@ -32,7 +32,7 @@ export function PrivacySection() {
         <SectionHeading
           overline="Privacy"
           title="Your finances, your device"
-          description="Pocket Flow is built with privacy at its core. Track spending without handing your data to the cloud."
+          description="Pocket Flow - Budget Tracker is built with privacy at its core. Track spending without handing your data to the cloud."
         />
 
         <div className="mt-16 grid gap-6 md:grid-cols-3">
@@ -51,11 +51,16 @@ export function PrivacySection() {
           ))}
         </div>
 
-        <FadeIn className="mt-10 text-center">
+        <FadeIn className="mt-10 flex flex-col items-center gap-3 text-center">
           <Link
             to="/privacy"
             className="text-sm font-medium text-primary-600 transition hover:text-primary-700">
             Read our full Privacy Policy →
+          </Link>
+          <Link
+            to="/privacy/zh"
+            className="text-sm font-medium text-primary-600 transition hover:text-primary-700">
+            阅读中文版隐私政策 →
           </Link>
         </FadeIn>
       </div>

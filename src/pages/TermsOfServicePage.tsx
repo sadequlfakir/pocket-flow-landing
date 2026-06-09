@@ -113,7 +113,7 @@ export function TermsOfServicePage() {
           <a
             href="mailto:sadequl.dev@gmail.com"
             className="font-medium text-primary-600 hover:text-primary-700">
-            saadequl.dev@gmail.com
+            sadequl.dev@gmail.com
           </a>
           .
         </p>

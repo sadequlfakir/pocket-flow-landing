@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import { APP_NAME } from '@/lib/constants';
+import { APP_NAME, DEVELOPER_NAME } from '@/lib/constants';
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -13,7 +13,7 @@ export function Footer() {
           <div>
             <p className="text-sm font-semibold text-white">{APP_NAME}</p>
             <p className="text-xs text-slate-500">
-              © {year} {APP_NAME}. All rights reserved.
+              © {year} {DEVELOPER_NAME}. {APP_NAME}. All rights reserved.
             </p>
           </div>
         </div>
@@ -21,6 +21,9 @@ export function Footer() {
         <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-400">
           <Link to="/privacy" className="transition-colors hover:text-white">
             Privacy Policy
+          </Link>
+          <Link to="/privacy/zh" className="transition-colors hover:text-white">
+            隐私政策
           </Link>
           <Link to="/terms" className="transition-colors hover:text-white">
             Terms of Service

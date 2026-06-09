@@ -1,4 +1,10 @@
-export const APP_NAME = 'Pocket Flow';
+export const APP_NAME = 'Pocket Flow - Budget Tracker';
+export const DEVELOPER_NAME = 'Sadequl Islam';
+export const CONTACT_EMAIL = 'sadequl.dev@gmail.com';
+export const PRIVACY_LAST_UPDATED = 'June 9, 2026';
+export const PRIVACY_LAST_UPDATED_ZH = '2026年6月9日';
+export const PRIVACY_POLICY_URL = 'https://pocket-flow-web.vercel.app/privacy';
+export const PRIVACY_POLICY_ZH_URL = 'https://pocket-flow-web.vercel.app/privacy/zh';
 export const APP_TAGLINE = 'Personal expense tracker';
 export const APP_DESCRIPTION =
   'Track income, expenses, and spending insights with a beautiful mobile app. Your data stays on your device — private, fast, and always available.';
