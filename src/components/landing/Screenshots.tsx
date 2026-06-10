@@ -10,7 +10,7 @@ export function Screenshots() {
   const current = screenshots[active];
 
   return (
-    <section id="screenshots" className="bg-mesh py-24">
+    <section id="screenshots" data-navbar-dark className="bg-mesh py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           light

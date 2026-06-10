@@ -6,7 +6,7 @@ import { FadeIn } from '@/components/ui/FadeIn';
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden pt-28 pb-20 sm:pt-36 sm:pb-28">
+    <section data-navbar-dark className="relative overflow-hidden pt-28 pb-20 sm:pt-36 sm:pb-28">
       <div className="bg-mesh absolute inset-0" />
 
       <div className="pointer-events-none absolute inset-0 overflow-hidden">

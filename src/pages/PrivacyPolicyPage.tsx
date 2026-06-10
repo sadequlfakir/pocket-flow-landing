@@ -8,10 +8,7 @@ import {
 
 export function PrivacyPolicyPage() {
   return (
-    <LegalLayout
-      title="Privacy Policy"
-      lastUpdated={PRIVACY_LAST_UPDATED}
-      alternateLanguage={{ label: '中文版', href: '/privacy/zh' }}>
+    <LegalLayout title="Privacy Policy" lastUpdated={PRIVACY_LAST_UPDATED} language="en">
       <section className="rounded-2xl border border-slate-200 bg-white p-6">
         <h2 className="text-xl font-semibold text-slate-900">App &amp; Developer Information</h2>
         <dl className="mt-4 space-y-3 text-sm leading-relaxed">

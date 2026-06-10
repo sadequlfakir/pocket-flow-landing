@@ -2,6 +2,7 @@ import { ArrowLeft } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 
+import { PrivacyLanguageSwitch } from '@/components/layout/PrivacyLanguageSwitch';
 import { FadeIn } from '@/components/ui/FadeIn';
 
 interface LegalLayoutProps {
@@ -10,10 +11,7 @@ interface LegalLayoutProps {
   children: ReactNode;
   backLabel?: string;
   lastUpdatedLabel?: string;
-  alternateLanguage?: {
-    label: string;
-    href: string;
-  };
+  language?: 'en' | 'zh';
 }
 
 export function LegalLayout({
@@ -22,10 +20,10 @@ export function LegalLayout({
   children,
   backLabel = 'Back to home',
   lastUpdatedLabel = 'Last updated',
-  alternateLanguage,
+  language,
 }: LegalLayoutProps) {
   return (
-    <main className="bg-slate-50 pt-28 pb-20">
+    <main data-navbar-light className="bg-slate-50 pt-28 pb-20">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <Link
@@ -35,26 +33,28 @@ export function LegalLayout({
             {backLabel}
           </Link>
 
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-            <div>
-              <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                {title}
-              </h1>
-              <p className="mt-2 text-sm text-slate-500">
-                {lastUpdatedLabel}: {lastUpdated}
-              </p>
-            </div>
-
-            {alternateLanguage ? (
-              <Link
-                to={alternateLanguage.href}
-                className="inline-flex shrink-0 items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-primary-200 hover:text-primary-700">
-                {alternateLanguage.label}
-              </Link>
-            ) : null}
+          <div>
+            <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+              {title}
+            </h1>
+            <p className="mt-2 text-sm text-slate-500">
+              {lastUpdatedLabel}: {lastUpdated}
+            </p>
           </div>
 
+          {language ? (
+            <div className="mt-6">
+              <PrivacyLanguageSwitch current={language} />
+            </div>
+          ) : null}
+
           <div className="prose-legal mt-10 space-y-6 text-slate-700">{children}</div>
+
+          {language ? (
+            <div className="mt-10">
+              <PrivacyLanguageSwitch current={language} compact />
+            </div>
+          ) : null}
         </FadeIn>
       </div>
     </main>

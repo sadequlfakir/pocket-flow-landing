@@ -13,7 +13,7 @@ export function PrivacyPolicyZhPage() {
       lastUpdated={PRIVACY_LAST_UPDATED_ZH}
       backLabel="返回首页"
       lastUpdatedLabel="最后更新"
-      alternateLanguage={{ label: 'English', href: '/privacy' }}>
+      language="zh">
       <section className="rounded-2xl border border-slate-200 bg-white p-6">
         <h2 className="text-xl font-semibold text-slate-900">应用与开发者信息</h2>
         <dl className="mt-4 space-y-3 text-sm leading-relaxed">

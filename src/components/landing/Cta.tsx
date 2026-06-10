@@ -6,7 +6,7 @@ import { FadeIn } from '@/components/ui/FadeIn';
 
 export function Cta() {
   return (
-    <section id="download" className="py-24">
+    <section id="download" data-navbar-dark className="bg-navy-950 py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-navy-800 to-navy-950 px-8 py-16 text-center sm:px-16">

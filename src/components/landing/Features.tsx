@@ -23,7 +23,7 @@ const iconMap: Record<string, LucideIcon> = {
 
 export function Features() {
   return (
-    <section id="features" className="bg-slate-50 py-24">
+    <section id="features" data-navbar-light className="bg-slate-50 py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           overline="Features"
