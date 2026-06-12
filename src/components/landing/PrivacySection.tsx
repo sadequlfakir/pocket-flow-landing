@@ -32,7 +32,7 @@ export function PrivacySection() {
         <SectionHeading
           overline="Privacy"
           title="Your finances, your device"
-          description="Pocket Flow - Budget Tracker is built with privacy at its core. Track spending without handing your data to the cloud."
+          description="FlowPocket - Budget Tracker is built with privacy at its core. Track spending without handing your data to the cloud."
         />
 
         <div className="mt-16 grid gap-6 md:grid-cols-3">

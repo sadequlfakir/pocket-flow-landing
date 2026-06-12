@@ -142,6 +142,10 @@ export function PrivacyPolicyPage() {
           on this page and update the &quot;Last updated&quot; date. Continued use of the App
           after changes constitutes acceptance of the updated policy.
         </p>
+        <p className="mt-3 leading-relaxed">
+          The App was renamed to {APP_NAME} in June 2026. This policy applies to the App under
+          its current name and any prior name used for the same application.
+        </p>
       </section>
 
       <section>

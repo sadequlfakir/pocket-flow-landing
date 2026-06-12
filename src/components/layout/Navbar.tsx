@@ -35,14 +35,14 @@ export function Navbar() {
                 'text-sm font-bold tracking-wide transition-colors duration-300',
                 isLight ? 'text-slate-900' : 'text-white',
               ].join(' ')}>
-              POCKET
+              FLOW
             </span>
             <span
               className={[
                 'block text-xs font-medium tracking-[0.2em] transition-colors duration-300',
                 isLight ? 'text-primary-600' : 'text-primary-400',
               ].join(' ')}>
-              FLOW
+              POCKET
             </span>
           </div>
         </Link>

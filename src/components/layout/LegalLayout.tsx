@@ -1,9 +1,10 @@
 import { ArrowLeft } from 'lucide-react';
-import type { ReactNode } from 'react';
+import { useEffect, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 
 import { PrivacyLanguageSwitch } from '@/components/layout/PrivacyLanguageSwitch';
 import { FadeIn } from '@/components/ui/FadeIn';
+import { APP_NAME } from '@/lib/constants';
 
 interface LegalLayoutProps {
   title: string;
@@ -22,6 +23,15 @@ export function LegalLayout({
   lastUpdatedLabel = 'Last updated',
   language,
 }: LegalLayoutProps) {
+  useEffect(() => {
+    const previousTitle = document.title;
+    document.title = `${title} | ${APP_NAME}`;
+
+    return () => {
+      document.title = previousTitle;
+    };
+  }, [title]);
+
   return (
     <main data-navbar-light className="bg-slate-50 pt-28 pb-20">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">

@@ -81,7 +81,7 @@ export function Hero() {
             <div className="phone-shadow relative overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900">
               <img
                 src="/ss/dashboard.png"
-                alt="Pocket Flow - Budget Tracker dashboard"
+                alt="FlowPocket - Budget Tracker dashboard"
                 className="w-full"
               />
             </div>

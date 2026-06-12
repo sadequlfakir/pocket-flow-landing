@@ -127,6 +127,9 @@ export function PrivacyPolicyZhPage() {
         <p className="mt-3 leading-relaxed">
           我们可能不时更新本隐私政策。更新后的政策将发布在本页面，并更新“最后更新”日期。您在政策变更后继续使用本应用，即视为接受更新后的政策。
         </p>
+        <p className="mt-3 leading-relaxed">
+          本应用已于 2026 年 6 月更名为 {APP_NAME}。本政策适用于本应用现行名称及此前用于同一应用的其他名称。
+        </p>
       </section>
 
       <section>

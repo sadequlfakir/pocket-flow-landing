@@ -1,8 +1,8 @@
-export const APP_NAME = 'Pocket Flow - Budget Tracker';
+export const APP_NAME = 'FlowPocket - Budget Tracker';
 export const DEVELOPER_NAME = 'Sadequl Islam';
 export const CONTACT_EMAIL = 'sadequl.dev@gmail.com';
-export const PRIVACY_LAST_UPDATED = 'June 9, 2026';
-export const PRIVACY_LAST_UPDATED_ZH = '2026年6月9日';
+export const PRIVACY_LAST_UPDATED = 'June 12, 2026';
+export const PRIVACY_LAST_UPDATED_ZH = '2026年6月12日';
 export const PRIVACY_POLICY_URL = 'https://pocket-flow-web.vercel.app/privacy';
 export const PRIVACY_POLICY_ZH_URL = 'https://pocket-flow-web.vercel.app/privacy/zh';
 export const APP_TAGLINE = 'Personal expense tracker';
@@ -51,37 +51,37 @@ export const features = [
 export const screenshots = [
   {
     src: '/ss/dashboard.png',
-    alt: 'Pocket Flow dashboard showing balance and monthly summary',
+    alt: 'FlowPocket dashboard showing balance and monthly summary',
     title: 'Dashboard',
     description: 'Your financial overview in one clean screen.',
   },
   {
     src: '/ss/transactions.png',
-    alt: 'Pocket Flow transactions list',
+    alt: 'FlowPocket transactions list',
     title: 'Transactions',
     description: 'Browse and manage every income and expense.',
   },
   {
     src: '/ss/add_transaction.png',
-    alt: 'Pocket Flow add transaction form',
+    alt: 'FlowPocket add transaction form',
     title: 'Quick Add',
     description: 'Log transactions in just a few taps.',
   },
   {
     src: '/ss/analytics.png',
-    alt: 'Pocket Flow analytics charts',
+    alt: 'FlowPocket analytics charts',
     title: 'Analytics',
     description: 'Charts and insights to understand your habits.',
   },
   {
     src: '/ss/categories.png',
-    alt: 'Pocket Flow categories management',
+    alt: 'FlowPocket categories management',
     title: 'Categories',
     description: 'Organize spending your way.',
   },
   {
     src: '/ss/settings.png',
-    alt: 'Pocket Flow settings screen',
+    alt: 'FlowPocket settings screen',
     title: 'Settings',
     description: 'Theme, currency, export, and backup options.',
   },
